@@ -36,4 +36,4 @@ oBtn.onclick = function () {
         window.open("http://www.baidu.com/s?wd=" + oQ.value + "")
     }
 }
-oQ.focus();//自动获取页面焦点
+// oQ.focus();//自动获取页面焦点
