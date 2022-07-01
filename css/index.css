@@ -60,8 +60,12 @@ body::-webkit-scrollbar {
   font: 20px bold;
   color: #0e0e34;
 }
+.content .search-bar {
+  display: flex;
+  flex-direction: row;
+}
 .content .search-bar #q {
-  width: 400px;
+  width: 350px;
   height: 18px;
   padding: 9px 7px;
   border: 1px solid #3298fe;
@@ -117,7 +121,7 @@ body::-webkit-scrollbar {
   margin-top: 5px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .collections .res .card {
   cursor: pointer;
