@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+}
+
+body {
+    // background-color: #485876;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Segoe WP, Arial;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+
+    /* Firefox */
+    ::-webkit-scrollbar {
+        width: 1px;
+        height: 6px;
+    }
+
+    /* 滚动槽 */
+    ::-webkit-scrollbar-track {
+        // -webkit-box-shadow: inset 0 0 3px rgba(255, 254, 254, 0.3);
+        border-radius: 5px;
+    }
+
+    /* 滚动条滑块 */
+    ::-webkit-scrollbar-thumb {
+        border-radius: 15px;
+        background: rgba(254, 251, 251, 0.2);
+        // -webkit-box-shadow: inset 0 0 3px RGB(243, 243, 244);
+    }
+
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    .content {
+
+        flex-wrap: wrap;
+    }
+
+    .searchbar {
+        border: 0;
+
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .word {
+        span {
+            &:nth-child(n+5) {
+                display: none;
+            }
+        }
+    }
+}
+
+// 网页主体
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // 中心图标
+    .logo{
+        // display: flex;
+        // flex-direction: row;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 100px;
+            margin-right: 30px;
+        }
+        p{
+            font:20px bold;
+            color: #0e0e34;
+        }
+    }
+
+    // 上方搜索框
+    .search-bar{
+        // background-color: aquamarine;
+        #q {
+                width: 400px;
+                height: 18px;
+                padding: 9px 7px;
+                border: 1px solid #3298fe;
+                border-radius:20px 0 0 20px;
+                margin-right: -5px;
+                font: 16px arial;
+                padding-left: 2em;
+                &:focus{
+                    outline: none;
+                }
+            }
+        
+        #ul1 {
+            border:1px solid #3298fe;
+            border-top: 0;
+            width: 425px;
+            margin-left: 14px;
+            padding: 0;
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            
+            /*让提示框脱离文档流，否则的话，百度一下的按钮会被挤到下面去*/
+            li{
+                
+                text-decoration: none;
+                a{
+                    line-height: 30px;
+                    padding: 5px;                  
+                    color: rgb(12, 1, 1);
+                    display: block;
+                    &:hover {
+                            background: #f8f8f8;
+                        }
+                }
+            }
+        }
+
+        #span-sub {
+            width: 82px;
+            height: 38px;
+            display: inline-block;
+            #sub {
+                    padding: 0;
+                    border: 0;
+                    border-radius:0 20px 20px 0;
+                    width: 82px;
+                    height: 38px;
+                    background: #38f;
+                    cursor: pointer;
+                    line-height: 38px;
+                    font-size: 16px;
+                    color: white;
+                }
+        }      
+    }
+
+    // 收藏网页
+    .collections {
+        .title {
+            border-bottom: 1px rgb(251, 202, 202) solid;
+            margin: 0, auto;
+            padding: 8px 10px 3px 10px;
+            color: #5d170b;
+            font-size: 16px;
+
+            p {
+                margin-left: 20px;
+            }
+        }
+        .res {
+            margin-top: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .card {
+                cursor: pointer;
+                align-items: center;
+                width: 170px;
+                height: 110px;
+                margin: 20px;
+                border-radius: 12px;
+                box-shadow: 0px 8px 25px rgba(0, 0, 0, 12%);
+                transition: all .5s;
+                overflow: hidden;
+                text-align: center;
+                font-size: 40px;
+                background-color: rgba(255, 255, 255, .5);
+                img{
+                    width: 100px;
+                }
+                p {
+                    margin-top: 12px;
+                    font-size: 12px;
+                }
+
+                .prop {
+                    margin: 25px;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    button {
+                        cursor: pointer;
+                        background-color: rgba(255, 255, 255, .3);
+                        margin-top: 20px;
+                        padding: 10px;
+                        border: 1px rgb(174, 174, 174) solid;
+                        border-radius: 6px;
+
+                        &:hover {
+                            background-color: #ECF5FF;
+                            color: #409EFF;
+                            border: 1px #409EFF solid;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
