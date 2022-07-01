@@ -162,8 +162,3 @@ body::-webkit-scrollbar {
   color: #409EFF;
   border: 1px #409EFF solid;
 }
-@media screen and (max-width: 768px) {
-  .res {
-    flex-wrap: wrap;
-  }
-}
