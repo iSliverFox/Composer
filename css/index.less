@@ -166,50 +166,24 @@ body::-webkit-scrollbar {
             margin: 20px;
             border-radius: 12px;
             box-shadow: 0px 8px 25px rgba(0, 0, 0, 12%);
-            // transition: all .5s;
+            // transition: all 1s;
             overflow: hidden;
             text-align: center;
             font-size: 40px;
-
-            // background-color: rgba(255, 255, 255, .5);
             img {
                 width: 100px;
             }
-
             p {
                 margin-top: 12px;
                 font-size: 12px;
-            }
-
-            .prop {
-                margin: 25px;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-
-                button {
-                    cursor: pointer;
-                    background-color: rgba(255, 255, 255, .3);
-                    margin-top: 20px;
-                    padding: 10px;
-                    border: 1px rgb(174, 174, 174) solid;
-                    border-radius: 6px;
-
-                    &:hover {
-                        background-color: #ECF5FF;
-                        color: #409EFF;
-                        border: 1px #409EFF solid;
-                    }
-                }
-            }
+            }       
         }
     }
 
 }
 
-// @media screen and (max-width:768px) {
-//     .res {
-//         flex-wrap: wrap;
-//     }
-// }
+@media screen and (max-width:768px) {
+    .res {
+        flex-wrap: wrap;
+    }
+}
