@@ -44,6 +44,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 }
 .content .logo {
   margin-top: 30px;
@@ -112,7 +113,13 @@ body::-webkit-scrollbar {
   font-size: 16px;
   color: white;
 }
-.content .collections .res .card {
+.collections .res {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.collections .res .card {
   cursor: pointer;
   align-items: center;
   width: 180px;
@@ -124,21 +131,21 @@ body::-webkit-scrollbar {
   text-align: center;
   font-size: 40px;
 }
-.content .collections .res .card img {
+.collections .res .card img {
   width: 100px;
 }
-.content .collections .res .card p {
+.collections .res .card p {
   margin-top: 12px;
   font-size: 12px;
 }
-.content .collections .res .card .prop {
+.collections .res .card .prop {
   margin: 25px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.content .collections .res .card .prop button {
+.collections .res .card .prop button {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.3);
   margin-top: 20px;
@@ -146,14 +153,13 @@ body::-webkit-scrollbar {
   border: 1px #aeaeae solid;
   border-radius: 6px;
 }
-.content .collections .res .card .prop button:hover {
+.collections .res .card .prop button:hover {
   background-color: #ECF5FF;
   color: #409EFF;
   border: 1px #409EFF solid;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .res {
-    display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 }
